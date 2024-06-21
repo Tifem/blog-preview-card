@@ -1,0 +1,146 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font-size: 16px;
+    --Weights: 500, 800;
+    --primary-font: 'Arial, sans-serif';
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+body{
+    background-color: var(--Yellow);
+
+}
+
+.container{
+    background-color: var(--White);
+    width: 400px;
+    height: 550px;
+    margin: 85px auto;
+    border-radius: 25px;
+    padding:25px;
+    border: 1px solid var(--Black);
+    box-shadow: 5px 5px 0px 0px;
+
+}
+
+
+.img-article{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 25px;
+   
+}
+.img-article img{
+    border-radius: 8px;
+}
+
+.learn-btn{
+    background-color: var(--Yellow);
+    color: var(--Black);
+    font-size: var(--font-size);
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    font-weight: bold;
+}
+
+.publish{
+    padding-top: 12px;
+    font-size: var(--font-size);
+    font-family: sans-serif;
+
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 18px 0px;
+
+}
+
+.text{
+    font-family: sans-serif;
+    color: var(--Grey);
+    font-size: var(--font-size);
+    line-height: 1.5;
+
+}
+
+.text-img{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.text-img p{
+    font-size: var(--font-size);
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.text-img img{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media(max-width:375px){
+    .container{
+        width: 310px;
+        height: 480px;
+        padding: 20px;
+    }
+    
+    .img-article img{
+        width: 280px;
+    }
+
+    .learn-btn{
+        padding: 5px 12px;
+    }
+
+    h2{
+       font-size: var(--font-size);
+    }
+    .publish{
+        font-size: 13px;
+    }
+    .text{
+        font-size: 12px;
+    }
+}
