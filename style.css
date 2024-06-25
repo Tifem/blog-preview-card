@@ -104,6 +104,10 @@ h2:hover{
     
 }
 
+.text-img img{
+    width: 40px;
+}
+
 .text-img p{
     font-size: var(--font-size);
     font-weight: 600;
