@@ -7,9 +7,12 @@
     --Weights: 500, 800;
     --primary-font: 'Arial, sans-serif';
 }
+
 a{
     text-decoration: none;
 }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +22,9 @@ a{
 
 body{
     background-color: var(--Yellow);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 
 }
 
@@ -26,7 +32,7 @@ body{
     background-color: var(--White);
     width: 400px;
     height: 550px;
-    margin: 85px auto;
+    /* margin: 85px auto; */
     border-radius: 25px;
     padding:25px;
     border: 1px solid var(--Black);
@@ -58,6 +64,7 @@ body{
     border-radius: 5px;
     font-size: var(--font-size);
     font-weight: bold;
+    width: 110px;
 }
 
 .publish{
@@ -72,6 +79,11 @@ h2{
     font-weight: 700;
     padding: 18px 0px;
 
+}
+
+h2:hover{
+    color: var(--Yellow);
+    cursor: pointer;
 }
 
 .text{
@@ -100,6 +112,9 @@ h2{
     border-radius: 50%;
 }
 
+.container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
 
 
 
